@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Younger Self</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/book.css" />
+    <link rel="stylesheet" href="styles/mirror.css" />
+    <link rel="stylesheet" href="styles/paper.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="page1" class="page">
+      <audio autoplay loop>
+        <source src="assets/music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <h1>Welcome to my Diary!</h1>
+
+      <div class="content">
+        <div class="book">
+          <span class="paper turn"></span>
+          <span class="paper turn"></span>
+          <span class="paper turn"></span>
+          <span class="paper turn"> </span>
+          <span class="paper turn"></span>
+          <span class="paper turn"></span>
+          <span class="cover"></span>
+          <span class="paper"></span>
+          <span class="cover turn"></span>
+        </div>
+        <button class="nextButton arrowButton1">Read Me</button>
+      </div>
+    </div>
+
+    <div id="page2" class="page" style="display: none">
+      <audio autoplay loop>
+        <source src="assets/music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="click-me">Click!</div>
+      <div class="click-me">Click!</div>
+      <div class="click-me">Click!</div>
+      <div class="click-me">Click!</div>
+      <div class="click-me">Click!</div>
+      <div class="items-container"></div>
+      <div class="sheet">
+        <div class="sheet-pattern">
+          <div class="sheet-content">
+            <p id="animate-text-page2">
+              <span>Dear</span>
+              <span>younger</span>
+              <span>me,</span>
+              <br />
+              <br />
+              <span>As</span>
+              <span>I</span>
+              <span>sit</span>
+              <span>down</span>
+              <span>to</span>
+              <span>write</span>
+              <span>this</span>
+              <span>letter,</span>
+              <span>my</span>
+              <span>heart</span>
+              <span>is</span>
+              <span>filled</span>
+              <span>with</span>
+              <span>a</span>
+              <span>mix</span>
+              <span>of</span>
+              <span>emotions,</span>
+              <span>nostalgia,</span>
+              <span>reflection,</span>
+              <span>and</span>
+              <span>a</span>
+              <span>deep</span>
+              <span>sense</span>
+              <span>of</span>
+              <span>longing</span>
+              <span>to</span>
+              <span>connect</span>
+              <span>with</span>
+              <span>you,</span>
+              <span>my</span>
+              <span>younger</span>
+              <span>self.</span>
+              <span>I</span>
+              <span>want</span>
+              <span>to</span>
+              <span>take</span>
+              <span>this</span>
+              <span>opportunity</span>
+              <span>to</span>
+              <span>share</span>
+              <span>with</span>
+              <span>you</span>
+              <span>the</span>
+              <span>wisdom</span>
+              <span>and</span>
+              <span>insights</span>
+              <span>I've</span>
+              <span>gained</span>
+              <span>over</span>
+              <span>the</span>
+              <span>years,</span>
+              <span>to</span>
+              <span>offer</span>
+              <span>guidance</span>
+              <span>and</span>
+              <span>comfort,</span>
+              <span>and</span>
+              <span>perhaps</span>
+              <span>most</span>
+              <span>importantly,</span>
+              <span>to</span>
+              <span>remind</span>
+              <span>you</span>
+              <span>that</span>
+              <span>you</span>
+              <span>are</span>
+              <span>never</span>
+              <span>alone</span>
+              <span>on</span>
+              <span>this</span>
+              <span>journey.</span>
+              <span>So,</span>
+              <span>let's</span>
+              <span>embark</span>
+              <span>on</span>
+              <span>this</span>
+              <span>journey</span>
+              <span>together,</span>
+              <span>as</span>
+              <span>I</span>
+              <span>share</span>
+              <span>with</span>
+              <span>you</span>
+              <span>the</span>
+              <span>lessons</span>
+              <span>and</span>
+              <span>experiences</span>
+              <span>that</span>
+              <span>have</span>
+              <span>shaped</span>
+              <span>who</span>
+              <span>I</span>
+              <span>am</span>
+              <span>today.</span>
+              <br />
+              <br />
+              <span>xoxo,</span>
+              <br />
+              <span>Your</span>
+              <span>older</span>
+              <span>self</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="nextButton arrowButton">&#10148;</button>
+    </div>
+
+    <div id="page3" class="page" style="display: none">
+      <audio autoplay loop muted id="page3-audio">
+        <source src="assets/children.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div id="bicycle-wrapper">
+        <img src="assets/girl-image.png" id="bicycle" />
+      </div>
+
+      <div class="shadow sheet">
+        <div class="sheet-pattern">
+          <div class="sheet-content">
+            <p class="animate-paragraph">
+              <span>Do</span>
+              <span>you</span>
+              <span>remember</span>
+              <span>the</span>
+              <span>endless</span>
+              <span>summer</span>
+              <span>days</span>
+              <span>spent</span>
+              <span>exploring</span>
+              <span>the</span>
+              <span>world</span>
+              <span>around</span>
+              <span>us,</span>
+              <span>the</span>
+              <span>simple</span>
+              <span>joy</span>
+              <span>of</span>
+              <span>laughter,</span>
+              <span>and</span>
+              <span>the</span>
+              <span>warmth</span>
+              <span>of</span>
+              <span>family</span>
+              <span>during</span>
+              <span>childhood?</span>
+              <span>Those</span>
+              <span>were</span>
+              <span>the</span>
+              <span>days</span>
+              <span>when</span>
+              <span>every</span>
+              <span>moment</span>
+              <span>seemed</span>
+              <span>to</span>
+              <span>hold</span>
+              <span>a</span>
+              <span>new</span>
+              <span>adventure,</span>
+              <span>and</span>
+              <span>the</span>
+              <span>world</span>
+              <span>was</span>
+              <span>filled</span>
+              <span>with</span>
+              <span>endless</span>
+              <span>possibilities.</span>
+              <span>As</span>
+              <span>I</span>
+              <span>look</span>
+              <span>back</span>
+              <span>on</span>
+              <span>those</span>
+              <span>cherished</span>
+              <span>memories,</span>
+              <span>I</span>
+              <span>am</span>
+              <span>filled</span>
+              <span>with</span>
+              <span>gratitude</span>
+              <span>for</span>
+              <span>the</span>
+              <span>carefree</span>
+              <span>days</span>
+              <span>of</span>
+              <span>our</span>
+              <span>youth</span>
+              <span>and</span>
+              <span>the</span>
+              <span>love</span>
+              <span>that</span>
+              <span>surrounded</span>
+              <span>us.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3>(scroll for adventure)</h3>
+      <button class="nextButton arrowButton">&#10148;</button>
+    </div>
+
+    <div id="page4" class="page" style="display: none">
+      <div id="flashlight">
+        <div class="content">
+          <div class="sheet">
+            <div class="sheet-pattern">
+              <div class="sheet-content">
+                <p>Do you remember your adolescence?</p>
+                <br />
+                <p>
+                  It was a period of growth, discovery, and navigating the
+                  tumultuous waters of change. It was during these formative
+                  years that we faced some of our greatest challenges and
+                  learned invaluable lessons about resilience, self-discovery,
+                  and the power of perseverance. Through the highs and lows, the
+                  triumphs and setbacks, we emerged stronger and wiser, armed
+                  with the knowledge that we could overcome any obstacle that
+                  came our way. My dear younger self, I want you to know that
+                  even in the darkest of times, you are stronger than you know.
+                  When life throws its toughest challenges your way, remember to
+                  draw strength from within, to lean on the love and support of
+                  those who care about you, and to never lose faith in yourself.
+                  You have already faced adversity with courage and resilience,
+                  and you will continue to do so, emerging stronger and more
+                  resilient with each passing storm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="nextButton arrowButton">&#10148;</button>
+    </div>
+
+    <div id="page5" class="page" style="display: none">
+      <div class="content">
+        <div class="comments">
+          <div>
+            <h2>
+              But look at <span class="emphasize">yourself</span> in the mirror and look
+              at how <span class="emphasize">far</span> you’ve come. 
+            </h2>
+          </div>
+          <div></div>
+          <div>
+            <h2>
+              I am so <span class="emphasize">proud</span> of the woman you’ve <span class="emphasize">become</span>.
+            </h1>
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <img src="assets/mirror1.png" />
+          <!-- <img src="assets/glass.png" class="mirror_overlay" /> -->
+          <video autoplay="true" id="videoElement"></video>
+        </div>
+      </div>
+      <button class="nextButton arrowButton">&#10148;</button>
+    </div>
+
+    <div id="page6" class="page" style="display: none">
+      <div class="sheet">
+        <div class="sheet-pattern">
+          <div class="sheet-content">
+            <p id="animate-text-page6">
+                <span>As</span>
+                <span>I</span>
+                <span>come</span>
+                <span>to</span>
+                <span>the</span>
+                <span>end</span>
+                <span>of</span>
+                <span>this</span>
+                <span>letter,</span>
+                <span>I</span>
+                <span>want</span>
+                <span>to</span>
+                <span>leave</span>
+                <span>you</span>
+                <span>with</span>
+                <span>a</span>
+                <span>final</span>
+                <span>message</span>
+                <span>of</span>
+                <span>encouragement</span>
+                <span>and</span>
+                <span>hope.</span>
+                <span>My</span>
+                <span>dear</span>
+                <span>younger</span>
+                <span>self,</span>
+                <span>you've</span>
+                <span>got</span>
+                <span>this.</span>
+                <span>You</span>
+                <span>have</span>
+                <span>already</span>
+                <span>faced</span>
+                <span>so</span>
+                <span>much</span>
+                <span>with</span>
+                <span>courage,</span>
+                <span>resilience,</span>
+                <span>and</span>
+                <span>grace,</span>
+                <span>and</span>
+                <span>I</span>
+                <span>have</span>
+                <span>no</span>
+                <span>doubt</span>
+                <span>that</span>
+                <span>you</span>
+                <span>will</span>
+                <span>continue</span>
+                <span>to</span>
+                <span>do</span>
+                <span>so</span>
+                <span>with</span>
+                <span>each</span>
+                <span>new</span>
+                <span>challenge</span>
+                <span>that</span>
+                <span>comes</span>
+                <span>your</span>
+                <span>way.</span>
+                <span>Trust</span>
+                <span>in</span>
+                <span>yourself,</span>
+                <span>believe</span>
+                <span>in</span>
+                <span>your</span>
+                <span>abilities,</span>
+                <span>and</span>
+                <span>never</span>
+                <span>forget</span>
+                <span>that</span>
+                <span>you</span>
+                <span>are</span>
+                <span>capable</span>
+                <span>of</span>
+                <span>achieving</span>
+                <span>greatness.</span>
+                <span>So,</span>
+                <span>embrace</span>
+                <span>the</span>
+                <span>journey,</span>
+                <span>cherish</span>
+                <span>the</span>
+                <span>moments,</span>
+                <span>and</span>
+                <span>always</span>
+                <span>remember</span>
+                <span>that</span>
+                <span>I</span>
+                <span>am</span>
+                <span>here</span>
+                <span>with</span>
+                <span>you</span>
+                <span>every</span>
+                <span>step</span>
+                <span>of</span>
+                <span>the</span>
+                <span>way.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <span>The End</span>
+      <button class="nextButton arrowButton">&#10148;</button>
+    </div>
+    
+    <div id="page7" class="page" style="display: none">
+      <div class="content">
+        <div id="about">
+          <h2>About</h2>
+          <p>
+            This project is a personal letter written from me to my younger
+            self. It is everything I would have wanted to tell my younger self
+            to give her hope. That we will get over all the challenges we have
+            been through and that she will be just ok. At the end of the
+            webiste, that mirror, is a fast-forward to my younger self. For her
+            to see how far she's come and see everything she has accomplished.
+            If only she knew that as a kid...
+          </p>
+        </div>
+        <div id="sources">
+          <h2>Sources</h2>
+          <p>
+            Barbie Song Soundtrack:
+            <a
+              href="https://www.youtube.com/watch?v=1X3_mUvmoaQ&ab_channel=POPSource"
+              >https://www.youtube.com/watch?v=1X3_mUvmoaQ&ab_channel=POPSource</a
+            >
+          </p>
+          <p>
+            Kids Music:
+            <a
+              href="https://www.youtube.com/watch?v=UydZd954-tM&ab_channel=SoundEffectsFactory"
+              >https://www.youtube.com/watch?v=UydZd954-tM&ab_channel=SoundEffectsFactory</a
+            >
+          </p>
+          <p>
+            Flashligh Effect:
+            <a
+              href="https://www.youtube.com/watch?v=IR4YozVqI6k&t=13s&ab_channel=CodingArtist"
+              >https://www.youtube.com/watch?v=IR4YozVqI6k&t=13s&ab_channel=CodingArtist</a
+            >
+          </p>
+          <p>
+            Flipbook Animation:
+            <a
+              href="https://www.youtube.com/watch?v=CPRDd2fb9go&ab_channel=HaverikaKrishna"
+              >https://www.youtube.com/watch?v=CPRDd2fb9go&ab_channel=HaverikaKrishna</a
+            >
+          </p>
+          <p>
+            Background Image Page 3:
+            <a
+              href="https://stock.adobe.com/ca/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=horizontal+road+illustration+flower&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=horizontal+road+illustration+flower&get_facets=0&asset_id=655663804"
+              >hhttps://stock.adobe.com</a
+            >
+          </p>
+          <p>*ChatGPT was also used to help debug some code*</p>
+        </div>
+      </div>
+      <button class="nextButton arrowButton">&circlearrowleft;</button>
+    </div>
+
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #fae7eb"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #f2d7e8"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #ecf8f7"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #b58ebc"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #d1edea"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #d8bbd3"></path>
+    </svg>
+    <svg class="main-cursor">
+      <path d="" class="trail" style="stroke: #ffdede"></path>
+    </svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/camera.js"></script>
+  </body>
+</html>
